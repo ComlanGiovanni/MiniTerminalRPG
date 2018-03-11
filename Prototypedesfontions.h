@@ -1,0 +1,17 @@
+int random(int min, int max);
+void loadSave(int *x, int *y, char * name, int *vie, int *vieMax, int *attack, int *defense, int *exp, int *level, int *inventory);
+void writeSave(int x, int y, char *name, int vie, int vieMax, int attack, int defense, int exp, int level, int *inventory);
+int afficherHelpMenu();
+void afficherInventaire(int * inventaire);
+int afficherMainMenu();
+void afficherAboutMenu();
+int afficherFightMenu();
+int afficherMenuInventaire(int * inventaire);
+void chooseName(char* name);
+void clearBuffer();
+void clearReturn(char* str);
+void pickItem(int rand, int* inventory);
+void afficherMap(int x, int y);
+int action(int * x, int * y);
+int launchFight(int* inventaire, char * name, int level, int vieMax, int * vie, int * attack, int*  defense, int isBoss);
+void launchGame(int isSaved);
